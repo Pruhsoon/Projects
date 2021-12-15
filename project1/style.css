@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/*custom properties  ara created like this*/
+:root {
+  --leading: 2em;}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+.hero-bg {
+  background: #307D99 url(images/oranges.jpg);
+  background-position: 12% 83%;
+  color: white;
+  text-align: center;
+  padding: 4em;
+
+}
+
+header {
+  padding: 1em 0;
+}
+.hero-bg a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+section {
+  margin: 0 1em;
+}
+h1{
+  font-size: 2.5rem;
+  margin: 2em 0 1.2em;
+}
+
+/*anything inside h1 span*/
+/* */ 
+
+h1 span {
+  text-transform: uppercase;
+  display:block;
+  /* display block because we want it to be on its seperate line
+  nothing on the left or right*/
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+  /*puts the healthy in front */
+}
+
+h1 span::before {
+ content: '';
+ position: absolute;
+ /* position of the blue line is absolute in terms of its parent element which is h1 span*/
+ /*width of the blue horiz line under 'the' */
+ width: 3em;
+background: #00bfff;
+ height: .4em;
+ /* height of blue line*/
+bottom: 0;
+z-index: -1;
+/* put the line in back */
+margin-left: -.3em;
+}
+
+.hero-bg p {
+  font-weight: bold;
+  margin: 0/*top */ 1em/*left and right */ 3em/*bottom*/;
+}
+
+.form-container {
+  background-color: white;
+  margin: 2em -5em 0;
+  /*margin is for space between this container and surrounding containers*/
+  padding: 2em;
+  /*padding is the space between inside elements and the container*/
+}
+
+label{
+display: block;
+font-weight: bold;
+color: #2d7d98;
+margin-bottom: 1em;
+font-size: 1.2em;
+}
+
+input[type=text] {
+  border: 1px solid #707070 ;
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-top: 1.2em;
+  box-sizing: border-box;
+  /*when we add padding along with width it adds the two so 
+  the box is slightly towards the rights....to mitigate that
+  we put box sizing border-box*/ 
+}
+
+.form-container p {
+  color: grey;
+  margin: 0.6em 0 1.5em;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+input[type=button] {
+  background-color: #f89104;
+  padding: 1em 0;
+  color: white;
+  border-radius: .5em;
+  width: 100%;
+  font-weight: bold;
+  font-family:'Montserrat';
+  cursor: pointer;
+  font-size: 1.3em;
+  border: none;
+}
+
+input[type=button]:hover {
+  background-color: rgb(216, 126, 1);
+ }
+
+ .authentic {
+  margin: 0;
+ }
+
+.right-col{
+ text-align:center;
+ margin: 3em 1em
+
+}
+
+h2 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.right-col h2::before {
+ content: '';
+ position: absolute;
+ /* position of the blue line is absolute in terms of its parent element which is h1 span*/
+ /*width of the blue horiz line under 'the' */
+ width: 8em;
+background: #00bfff;
+ height: .4em;
+ /* height of blue line*/
+bottom: 0;
+z-index: -1;
+/* put the line in back */
+margin-left: -.3em;
+}
+
+ img {
+  width: 100%;
+ }
+
+ p {
+  line-height: var(--leading);
+ }
+/* we start with min width because we created a mobile 
+first desing and now we are optimising it for desktop*/
+
+@media (min-width: 730px) {
+
+  section {
+    margin: 0 4em;
+  }
+
+.form-container {
+  margin: 2em -4em 0;
+  
+}
+
+
+}
+
+
+@media (min-width: 930px) {
+ 
+.hero-bg {
+  text-align: left;
+}
+
+.hero-bg p {
+  margin: 0 0 3em;
+}
+ 
+ .hero-bg section {
+  width: 65%;
+ }
+
+.form-container {
+  margin: 2em 0 0 ;
+  padding: 2em;
+  border-radius: .5em;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+  /*in order how much to the 1)x-axis 2) y axis 
+  3) blurr amount 4 color */
+}
+
+form {
+  display: flex;
+}
+
+.form-left {
+  width: 70%;
+}
+
+label {
+  margin: 0;
+}
+
+input[type="button"] {
+  height: fit-content;
+  font-size: 1.1em;
+  margin-left: 1em;
+  margin-top: 2.2em;
+  padding: 0.7em 0;
+  width: 30%;
+}
+
+.hero-bg p {
+  margin-bottom: 0;
+}
+
+/* we can write html.class name for css*/
+section.authentic {
+display: grid;
+grid-template-columns: repeat(2,50%);
+grid-template-areas: "bowl content"
+}
+
+
+.right-col {
+  grid-area: content;
+  padding: 0 10%;
+  text-align: left;
+  align-self: center;
+}
+
+img {
+  grid-area: bowl;
+}
+
+h2 {
+  margin: 0;
+}
+
+}
+ 
+ /* we want to animate the top*/
+.top {
+  animation: fadeIn 2s forwards
+}
+
+@keyframes fadeIn {
+  from {
+   opacity:0;
+   transform: translateY(-2em);
+  }
+
+  to {
+   opacity:1;
+   transform: translateY(0);
+  }
+}
