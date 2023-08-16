@@ -5,7 +5,8 @@ How to run this on your machine?
 2. Open index.html
 
 
-Result: ![Chromedino](https://github.com/Pruhsoon/Projects/assets/92383516/c23774ac-dcb5-4b2c-885f-2194f986276e)
+Result:
+![Chromedino](https://github.com/Pruhsoon/Projects/assets/92383516/c23774ac-dcb5-4b2c-885f-2194f986276e)
 
 
 Missing functionality: 
