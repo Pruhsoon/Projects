@@ -2,10 +2,8 @@ Steps To Run this on Your machine:
 
 Step 1: Clone this repo--> gh repo clone Pruhsoon/Projects
 
-Step 2: Install Nodemon--> npm i nodemon
+Step 2: Open index.html
 
-Step 3: Run command --> nodemon server.js
+Result: ![staticHtm](https://github.com/Pruhsoon/Projects/assets/92383516/990c955d-dfd7-41a4-9d5f-126e1f99f885)
 
-Step 4: Open your browser and insert URL --> localhost:3000
-
-Result:
+The project showcases my ability to work in css and js.
