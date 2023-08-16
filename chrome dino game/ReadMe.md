@@ -1,6 +1,6 @@
 How to run this on your machine?
 
-1. Clone the repo using
+1. Clone the repo using  gh repo clone Pruhsoon/Projects
 
 2. Open index.html
 
