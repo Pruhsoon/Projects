@@ -1,0 +1,105 @@
+body {
+  text-align: center;
+  background-color: rgba(4, 222, 0, 0.83);
+  padding:0%;
+  font-family: Helvetica;
+}
+.header {
+ 
+  margin: -10px;
+  padding: 0%;
+  background-color:#F5FCF5ff; 
+}
+
+#logo{
+  width: 300px;
+ height: auto;
+}
+
+
+h1 {
+  font-size: 2.2rem;
+  color: #DBEDF3;
+  font-family: Helvetica;
+  text-decoration: double;
+  text-shadow: 0px 1px #010100ff;
+
+}
+
+
+p{
+  font-weight: 600;
+  font-size: 2rem;
+  color: #010100ff;
+  font-family: Helvetica;
+  text-shadow: 1.3px 1px #241d2004
+ 
+}
+
+.set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+
+
+
+.drum {
+  outline: none;
+  border: 2px solid rgba(1, 1, 0, 0.74);
+  font-size: 1.6rem;
+  font-family: Helvetica;
+  line-height: 2;
+  font-weight: 650;
+  color: #F5FCF5ff;
+  border-radius: 15px;
+  display: inline-block;
+  width: 75%;
+  height: 20;
+  text-align: center;
+  margin: 10px;
+  background-color: #F5FCF5ff;
+}
+
+.pressed {
+
+  color: #010100ff;
+}
+
+.next-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  background-color: #F5FCF5ff;
+  color: #010100ff ;
+  border: 1px solid rgba(1, 1, 0, 0.74) ;
+  border-radius: 5px;
+  outline: none; /* Remove blue highlight */
+}
+
+.next-button:hover {
+  background-color: #72A533ff;
+  border: 1px solid #010100ff ;
+}
+
+#xImage {
+  display: none; /* Initially hide the image */
+  position:absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -27%); 
+}
+
+
+/* #03DE00ff light green
+#010100ff black
+#F5FCF5ff white grey
+#72A533ff dark green */
